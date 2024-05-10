@@ -8,6 +8,11 @@
   <link rel="stylesheet" href="style.css">
   <style>
 
+    .main-login {
+        width: 100%;
+        height: 100%; 
+    }
+
     .login-box {
         max-width: 400px;
         margin: 0 auto;
@@ -49,15 +54,15 @@
     <div class="dawn-login">
       <div class= "textfield"  mb-4>
         <h3 class="text-sm font-normal">Digite sua matrícula</h3>
-        <input type= "text" name="matricula" placeholder="Matrícula " class=" bg-blue-900 mt-1 px-4 py-2 w-full border border-blue-900 rounded-md focus:outline-none focus:border-blue-900" required>
+        <input type= "text" name="matricula" placeholder="Matrícula  " class=" text-white bg-blue-900 mt-1 px-4 py-2 w-full border border-blue-900 rounded-md focus:outline-none focus:border-blue-900 "  required>
       </div>
-      <div class="textfield mb-4 " >
+      <div class="textfield" mb-4><br>
         <h4 class="text-sm font-normal">Digite sua senha</h4>
-        <input type="password " name="senha " placeholder="Senha " class=" bg-blue-900 mt-1 px-4 py-2 w-full border border-blue-900 rounded-md focus:outline-none focus:border-blue-900" required>
+        <input type="password" name="senha " placeholder="Senha " class=" bg-blue-900 mt-1 px-4 py-2 w-full border border-blue-900 rounded-md focus:outline-none focus:border-blue-900" required>
       </div>
     </div>
-    <div class="flex justify-between">
-      <button class="btn-login w-1/2 py-2 mt-4 mr-2 bg-blue-400 text-white font-semibold rounded-md hover:bg-blue-600 focus:outline-none focus:bg-cyan-950">Acessar</button>
+    <div class="flex justify-between mt-28">
+      <button class="btn-login w-1/2 py-2 mt-4 mr-2 bg-blue-400 text-white font-semibold rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-950">Acessar</button>
       <button class="cdt-login w-1/2 py-2 mt-4 ml-2 text-black font-semibold rounded-md border border-gray-600 hover:bg-gray-300 focus:outline-none focus:bg-gray-400">Cadastrar</button>
     </div>
   </div>
