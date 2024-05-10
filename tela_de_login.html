@@ -15,28 +15,49 @@
     .text-organize {
         color: #0C3972;
     }
+    
+    .btn-login {
+      background-color: #0C3972;
+    }
 
+    .cdt-login {
+      background-color: darkgrey;
+    }
+
+    .password {
+      background-color: #0C3972;
+    }
+
+    .up-login {
+      margin: 2rem;
+
+    }
+
+    .up-login {
+      margin-bottom: 3rem; 
+    }
+    
   </style>
   <title>Login</title>
 </head>
-<body class="bg-gray-100 flex items-center justify-center h-screen"> 
-  <div class="main-login">
+<body class="bg-gray-100 flex items-center justify-center h-screen "> 
+  <div class="main-login p-6 bg-white shadow-md rounded-md">
     <div class="up-login text-center">
-      <h1 class="text-3xl font-bold text-organize">organize.</h1>
-      <h2 class="text-lg font-semibold">Vamos começar?</h2>
+      <h1 class="text-5xl font-bold text-organize">organize.</h1><br>
+      <h2 class="text-lg font-normal">Vamos começar?</h2>
     </div>
-    <div class="down-login p-6 bg-white shadow-md rounded-md">
-      <div class="textfield mb-4">
-        <h3 class="text-sm font-semibold">Digite sua matrícula</h3>
-        <input type="text" name="matricula" placeholder="Matrícula" class="mt-1 px-4 py-2 w-full border border-gray-300 rounded-md focus:outline-none focus:border-blue-400" required>
+    <div class="dawn-login">
+      <div class= "textfield"  mb-4>
+        <h3 class="text-sm font-normal">Digite sua matrícula</h3>
+        <input type= "text" name="matricula" placeholder="Matrícula " class=" bg-blue-900 mt-1 px-4 py-2 w-full border border-blue-900 rounded-md focus:outline-none focus:border-blue-900" required>
       </div>
-      <div class="textfield mb-4">
-        <h4 class="text-sm font-semibold">Digite sua senha</h4>
-        <input type="password" name="senha" placeholder="Senha" class="mt-1 px-4 py-2 w-full border border-gray-300 rounded-md focus:outline-none focus:border-blue-400" required>
+      <div class="textfield mb-4 " >
+        <h4 class="text-sm font-normal">Digite sua senha</h4>
+        <input type="password " name="senha " placeholder="Senha " class=" bg-blue-900 mt-1 px-4 py-2 w-full border border-blue-900 rounded-md focus:outline-none focus:border-blue-900" required>
       </div>
     </div>
     <div class="flex justify-between">
-      <button class="btn-login w-1/2 py-2 mt-4 mr-2 bg-blue-500 text-white font-semibold rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600">Acessar</button>
+      <button class="btn-login w-1/2 py-2 mt-4 mr-2 bg-blue-400 text-white font-semibold rounded-md hover:bg-blue-600 focus:outline-none focus:bg-cyan-950">Acessar</button>
       <button class="cdt-login w-1/2 py-2 mt-4 ml-2 text-black font-semibold rounded-md border border-gray-600 hover:bg-gray-300 focus:outline-none focus:bg-gray-400">Cadastrar</button>
     </div>
   </div>
