@@ -2,31 +2,43 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <style>
+
+    .login-box {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    .text-organize {
+        color: #0C3972;
+    }
+
+  </style>
   <title>Login</title>
 </head>
-<body>
-  <div class = "main-login">
-    <div class = "up-login">
-      <h1>organize.<br></h1>
-      <h2>Bem Vindo!</h2>
+<body class="bg-gray-100 flex items-center justify-center h-screen"> 
+  <div class="main-login">
+    <div class="up-login text-center">
+      <h1 class="text-3xl font-bold text-organize">organize.</h1>
+      <h2 class="text-lg font-semibold">Vamos começar?</h2>
     </div>
-    <div calss = "dawn-login">
-      <div class = "card-login">
-        <div class = "textfield">
-          <h3>Digite sua matrícula</h3>
-          <input type="text" name="matrícula" placeholder="Matrícula">
-        </div>
-      <div class = "textfield">
-        <h4>Digite sua senha</h4>
-        <input type="password" name = "senha" placeholder="Senha">
+    <div class="down-login p-6 bg-white shadow-md rounded-md">
+      <div class="textfield mb-4">
+        <h3 class="text-sm font-semibold">Digite sua matrícula</h3>
+        <input type="text" name="matricula" placeholder="Matrícula" class="mt-1 px-4 py-2 w-full border border-gray-300 rounded-md focus:outline-none focus:border-blue-400" required>
+      </div>
+      <div class="textfield mb-4">
+        <h4 class="text-sm font-semibold">Digite sua senha</h4>
+        <input type="password" name="senha" placeholder="Senha" class="mt-1 px-4 py-2 w-full border border-gray-300 rounded-md focus:outline-none focus:border-blue-400" required>
       </div>
     </div>
-  </div>
-  <button class = "cdt-login">Cadastrar</button>
-  <button class = "btn-login">Acessar</button>
+    <div class="flex justify-between">
+      <button class="btn-login w-1/2 py-2 mt-4 mr-2 bg-blue-500 text-white font-semibold rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600">Acessar</button>
+      <button class="cdt-login w-1/2 py-2 mt-4 ml-2 text-black font-semibold rounded-md border border-gray-600 hover:bg-gray-300 focus:outline-none focus:bg-gray-400">Cadastrar</button>
+    </div>
   </div>
 </body>
 </html>
